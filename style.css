@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: lato, sans-serif;
+}
+
+main {
+    margin-top: 50px;
+}
+
+main p {
+    font-weight: 340;
+    font-size: 18px;
+}
+
+.header img {
+    margin: auto;
+    display: block;
+    width: 250px;
+}
+
+.section {
+    width: 400px;
+    margin: auto;
+    padding-bottom: 20px;
+    //border: 1px solid black;
+}
+
+.emptyFlex1, .emptyFlex4, .emptyFlex5 {
+    display: none;
+}
+
+.section h2 {
+    border-bottom: 2px solid #CB6225;
+}
+
+.bio {
+    padding-top: 30px;
+}
+
+.bio p {
+    line-height: 22px;
+}
+
+.headline {
+    font-weight: 350;
+}
+
+.portfolio li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.portfolio a:hover {
+    color: #CB6225;
+}
+
+.contact {
+    padding-bottom: 90px;
+}
+
+.contact li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 54px 0 0;
+}
+
+.contact li i {
+    font-size: 35px;
+}
+
+.contact li i:hover {
+    opacity: 60%;
+}
+
+/* .fa {
+    display: inline-block;
+    font: FontAwesome;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+} */
+
+@media screen and (min-width: 860px) {
+
+    .divider {
+        width: 2px;
+        height: 100vh;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        background-color: #2E2E2E;
+        margin-top: -10px;
+        z-index: -1;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: row;
+        width: 860px;
+        align-content: space-around;
+        //border: 1px solid black;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        //border: 1px solid red;
+        padding-bottom: 0;
+    }
+
+    .emptyFlex1, .bio {
+        height: 430px;
+    }
+
+    .portfolio {
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .portfolio, .emptyFlex4 {
+        height: 130px;
+    }
+
+    .emptyFlex5, .contact {
+        height: 150px;
+    }
+
+    .bio, .contact {
+        margin-left: 40px;
+    }
+
+    .emptyFlex1, .emptyFlex4, .emptyFlex5 {
+        display: block;
+    }
+}

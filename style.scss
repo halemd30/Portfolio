@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header img {
+    margin: auto;
+    display: block;
+    width: 250px;
+    margin-top: 50px;
+}
+
+.bio {
+    margin: 50px;
+}
+
+.bio p {
+    line-height: 80px;
+    color: red;
+}
+
+
+@media screen and (min-width: 650px) {
+
+}

@@ -1,25 +1,164 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: raleway;
+    //font-family: lato, sans-serif;
+}
+
+main {
+    margin-top: 50px;
+
+    p {
+        font-weight: 340;
+        font-size: 18px;
+    }
 }
 
 .header img {
     margin: auto;
     display: block;
     width: 250px;
-    margin-top: 50px;
+}
+
+.section {
+    width: 400px;
+    margin: auto;
+    padding-bottom: 20px;
+
+    h2 {
+        border-bottom: 2px solid #CB6225;
+        font-family: Sacramento;
+        font-size: 50px;
+    }
+    
+}
+
+.emptyFlex1, .emptyFlex4, .emptyFlex5 {
+    display: none;
 }
 
 .bio {
-    margin: 50px;
+    padding-top: 30px;
+
+    p {
+        line-height: 23px;
+    }
 }
 
-.bio p {
-    line-height: 80px;
-    color: red;
+.headline {
+    font-weight: 450;
+    font-size: 18px;
 }
 
+.portfolio {
 
-@media screen and (min-width: 650px) {
+    li, a {
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        line-height: 30px;
+        font-size: 18px;
 
+        img {
+            border: 1px solid black;
+            border-radius: 10px;
+
+            :hover {
+                opacity: 60%;
+            }
+        }
+    }
+}
+
+.portfolio li a img {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.portfolio li a img:hover {
+    opacity: 60%;
+}
+
+.portfolio a:hover {
+    color: #CB6225;
+}
+
+.contact {
+    padding-bottom: 90px;
+}
+
+.contact li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 52px 0 0;
+}
+
+.contact li i {
+    font-size: 35px;
+    color: black;
+}
+
+.contact li i:hover {
+    opacity: 60%;
+}
+
+@media screen and (min-width: 860px) {
+
+    .divider {
+        width: 2px;
+        height: 140vh;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        background-color: #2E2E2E;
+        //background-color:orange;
+        
+        margin-top: -30px;
+        z-index: -1;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: row;
+        width: 860px;
+        align-content: space-around;
+        //border: 1px solid black;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        //border: 1px solid red;
+        padding-bottom: 0;
+    }
+
+    .emptyFlex1, .bio {
+        height: 430px;
+    }
+
+    .portfolio {
+        text-align: right;
+        margin-right: 40px;
+        margin-top: 110px;
+    }
+
+    .portfolio, .emptyFlex4 {
+        height: 130px;
+    }
+
+    .emptyFlex5, .contact {
+        height: 150px;
+    }
+
+    .contact {
+        margin: 390px 0 100px 0;
+    }
+
+    .bio, .contact {
+        margin-left: 40px;
+    }
+
+    .emptyFlex1, .emptyFlex4, .emptyFlex5 {
+        display: block;
+    }
 }

@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: raleway;
@@ -30,7 +35,7 @@ main p {
   font-size: 50px;
 }
 
-.emptyFlex1, .emptyFlex4, .emptyFlex5 {
+.emptyFlex1, .emptyFlex2, .emptyFlex3 {
   display: none;
 }
 
@@ -47,34 +52,71 @@ main p {
   font-size: 18px;
 }
 
-.portfolio li, .portfolio a {
+.portfolio li {
   list-style-type: none;
+}
+
+.portfolio li a {
   text-decoration: none;
   color: black;
-  line-height: 30px;
   font-size: 18px;
 }
 
-.portfolio li img, .portfolio a img {
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.portfolio li img :hover, .portfolio a img :hover {
-  opacity: 60%;
-}
-
-.portfolio li a img {
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.portfolio li a img:hover {
-  opacity: 60%;
-}
-
-.portfolio a:hover {
+.portfolio li a:hover {
   color: #CB6225;
+}
+
+.portfolio li .skills {
+  position: absolute;
+  margin-left: -37px;
+  margin-top: -155px;
+}
+
+.portfolio li .skills .fab {
+  display: block;
+  font-size: 35px;
+  padding-bottom: 3px;
+  color: #CB6225;
+}
+
+.portfolio li .skills .fa-html5, .portfolio li .skills .fa-css3-alt {
+  padding-left: 2px;
+}
+
+.portfolio li .projectTitleMobile {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  top: -15px;
+  position: relative;
+  border-bottom: 1px solid #CB6225;
+  width: 300px;
+  font-family: Alegreya;
+}
+
+.portfolio li .projectTitleMobile a {
+  font-size: 21px;
+}
+
+.portfolio li .projectTitleDesktop {
+  display: none;
+}
+
+.portfolio li .descMobile {
+  width: 300px;
+  position: relative;
+  padding: 75px 15px 0 15px;
+  top: -90px;
+  height: 120px;
+}
+
+.portfolio li img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.portfolio li img:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .contact {
@@ -99,8 +141,8 @@ main p {
 
 @media screen and (min-width: 860px) {
   .divider {
-    width: 2px;
-    height: 140vh;
+    width: 1px;
+    height: 160vh;
     margin: auto;
     position: absolute;
     left: 50%;
@@ -132,21 +174,75 @@ main p {
   .portfolio {
     text-align: right;
     margin-right: 40px;
-    margin-top: 110px;
+    margin-top: 150px;
   }
-  .portfolio, .emptyFlex4 {
+  .portfolio ul li .skills {
+    margin-left: 22px !important;
+  }
+  .portfolio ul li .skills .fa-html5, .portfolio ul li .skills .fa-css3-alt {
+    padding-right: 2px;
+  }
+  .portfolio p.projectTitleDesktop {
+    display: block;
+    top: -18px;
+    right: 10px;
+    position: relative;
+    font-family: Alegreya;
+  }
+  .portfolio p.projectTitleDesktop a {
+    font-size: 21px;
+  }
+  .portfolio .descMobile {
+    display: none;
+  }
+  .portfolio .projectTitleMobile {
+    display: none;
+  }
+  .portfolio, .emptyFlex2 {
     height: 130px;
   }
-  .emptyFlex5, .contact {
+  .emptyFlex2 {
+    position: relative;
+    top: 220px;
+    padding-right: 106px;
+    line-height: 21px;
+    font-size: 16px;
+  }
+  .emptyFlex2 .descBackground {
+    background-color: rgba(46, 46, 46, 0.1);
+    border-radius: 10px;
+    width: 450px;
+    position: absolute;
+    right: 100px;
+    z-index: -1;
+  }
+  .emptyFlex2 .calvinQuizBorder {
+    height: 152px;
+    top: 13px;
+  }
+  .emptyFlex2 .calvinQuizDesc {
+    top: 47px;
+    position: relative;
+  }
+  .emptyFlex2 .portfolioBorder {
+    height: 151px;
+    top: 233px;
+  }
+  .emptyFlex2 .oldPortfolioDesc {
+    top: 161px;
+    position: relative;
+    padding-right: 16px;
+  }
+  .emptyFlex3, .contact {
     height: 150px;
   }
   .contact {
-    margin: 390px 0 100px 0;
+    margin: 405px 0 100px 0;
   }
   .bio, .contact {
     margin-left: 40px;
   }
-  .emptyFlex1, .emptyFlex4, .emptyFlex5 {
+  .emptyFlex1, .emptyFlex2, .emptyFlex3 {
     display: block;
   }
 }

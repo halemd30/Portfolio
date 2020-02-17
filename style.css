@@ -3,6 +3,13 @@
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    background-color: green;
+    margin: 10px;
+  }
+}
+
 body {
   margin: 0;
   font-family: raleway;
@@ -21,6 +28,7 @@ main p {
   margin: auto;
   display: block;
   width: 250px;
+  position: relative;
 }
 
 .section {

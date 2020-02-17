@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 375px) {
+    body {
+        background-color: green;
+        margin: 10px;
+    }
+
+    // .header {
+    //     width: 117vw;
+    //     width: 100vw;
+    // }
+}
+
 body {
     margin: 0;
     font-family: raleway;
-    //font-family: lato, sans-serif;
 }
 
 main {
@@ -19,10 +30,14 @@ main {
     }
 }
 
-.header img {
-    margin: auto;
-    display: block;
-    width: 250px;
+.header {
+
+    img {
+        margin: auto;
+        display: block;
+        width: 250px;
+        position: relative;
+    }
 }
 
 .section {

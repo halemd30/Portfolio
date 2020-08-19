@@ -6,11 +6,23 @@
 @media screen and (min-width: 320px) and (max-width: 414px) {
   body,
   html {
-    background-color: lightgreen;
+    padding: 10px;
   }
   body .section,
   html .section {
     width: 100%;
+  }
+  body .contact ul,
+  html .contact ul {
+    text-align: center;
+  }
+  body .contact ul li,
+  html .contact ul li {
+    padding: 10px 32px 0 0;
+  }
+  body .portfolio ul li,
+  html .portfolio ul li {
+    margin-left: -8px;
   }
 }
 
@@ -71,6 +83,7 @@ main p {
 
 .portfolio li {
   list-style-type: none;
+  margin-left: 17px;
 }
 
 .portfolio li a {
@@ -194,6 +207,9 @@ main p {
     text-align: right;
     margin-right: 40px;
     margin-top: 150px;
+  }
+  .portfolio li {
+    margin-left: 0;
   }
   .portfolio ul li .skills {
     margin-left: 22px !important;

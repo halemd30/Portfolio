@@ -3,10 +3,37 @@
           box-sizing: border-box;
 }
 
-@media screen and (min-width: 320px) and (max-width: 414px) {
+@media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+  }
+  body header {
+    width: 100vw;
+  }
+  body .emptyFlex1,
+  body .emptyFlex2,
+  body .emptyFlex3 {
+    display: none;
+  }
+  body .section {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 414px) {
   body,
   html {
     padding: 10px;
+  }
+  body header,
+  html header {
+    width: 100%;
+    display: block;
+  }
+  body header img,
+  html header img {
+    margin-right: 0;
+    position: absolute;
   }
   body .section,
   html .section {
@@ -114,7 +141,7 @@ main p {
   padding-left: 2px;
 }
 
-.portfolio li .projectTitleMobile {
+.portfolio li .projectTitle {
   padding-left: 15px;
   padding-bottom: 15px;
   top: -15px;
@@ -124,12 +151,8 @@ main p {
   font-family: Alegreya;
 }
 
-.portfolio li .projectTitleMobile a {
+.portfolio li .projectTitle a {
   font-size: 21px;
-}
-
-.portfolio li .projectTitleDesktop {
-  display: none;
 }
 
 .portfolio li .descMobile {
@@ -218,20 +241,17 @@ main p {
   .portfolio ul li .skills .fa-css3-alt {
     padding-right: 2px;
   }
-  .portfolio p.projectTitleDesktop {
+  .portfolio p.projectTitle {
     display: block;
     top: -18px;
     right: 10px;
     position: relative;
     font-family: Alegreya;
   }
-  .portfolio p.projectTitleDesktop a {
+  .portfolio p.projectTitle a {
     font-size: 21px;
   }
   .portfolio .descMobile {
-    display: none;
-  }
-  .portfolio .projectTitleMobile {
     display: none;
   }
   .portfolio,

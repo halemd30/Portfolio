@@ -1,13 +1,40 @@
-// master css!
-
 * {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 320px) and (max-width: 414px) {
+@media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+
+    header {
+      width: 100vw;
+    }
+
+    .emptyFlex1,
+    .emptyFlex2,
+    .emptyFlex3 {
+      display: none;
+    }
+    .section {
+      width: 100vw;
+    }
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 414px) {
   body,
   html {
     padding: 10px;
+
+    header {
+      width: 100%;
+      display: block;
+
+      img {
+        margin-right: 0;
+        position: absolute;
+      }
+    }
 
     .section {
       width: 100%;
@@ -116,15 +143,9 @@ main {
       .fa-css3-alt {
         padding-left: 2px;
       }
-
-      // img {
-      //     display: block;
-      //     width: 30px;
-      //     color: #CB6225;
-      // }
     }
 
-    .projectTitleMobile {
+    .projectTitle {
       padding-left: 15px;
       padding-bottom: 15px;
       top: -15px;
@@ -136,10 +157,6 @@ main {
       a {
         font-size: 21px;
       }
-    }
-
-    .projectTitleDesktop {
-      display: none;
     }
 
     .descMobile {
@@ -232,7 +249,7 @@ main {
       }
     }
 
-    p.projectTitleDesktop {
+    p.projectTitle {
       display: block;
       top: -18px;
       right: 10px;
@@ -245,10 +262,6 @@ main {
     }
 
     .descMobile {
-      display: none;
-    }
-
-    .projectTitleMobile {
       display: none;
     }
   }

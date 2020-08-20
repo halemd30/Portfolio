@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 414px) {
   body {
     margin: auto;
     padding: 15px;
@@ -65,40 +65,37 @@
   }
 }
 
-@media screen and (min-width: 325px) and (max-width: 414px) {
+@media screen and (min-width: 375px) and (max-width: 414px) {
   body {
-    //padding: 10px;
-    //max-width: 80%;
-    //overflow: hidden;
+    padding: 0;
+  }
 
-    header {
-      width: 100%;
-      display: block;
+  .portfolio ul li {
+    a img {
+      width: 85%;
+      margin-left: 35px;
+    }
 
-      img {
-        margin-right: 0;
-        position: absolute;
+    .skills {
+      margin-left: 3px !important;
+      margin-top: -140px !important;
+
+      .fab {
+        font-size: 30px !important;
       }
     }
+  }
 
-    .section {
-      width: 100%;
-    }
+  .contact {
+    text-align: center;
+    ul {
+      li a {
+        padding: 6px;
 
-    .contact {
-      ul {
-        text-align: center;
-        li {
-          padding: 10px 32px 0 0;
+        .fa,
+        .fab {
+          font-size: 41px;
         }
-      }
-    }
-
-    .portfolio ul {
-      //padding-left: 0;
-
-      li {
-        margin-left: -8px;
       }
     }
   }
@@ -195,7 +192,7 @@ main {
 
     .projectTitle {
       padding-left: 15px;
-      padding-bottom: 15px;
+      padding-bottom: 5px;
       top: -15px;
       position: relative;
       border-bottom: 1px solid #cb6225;

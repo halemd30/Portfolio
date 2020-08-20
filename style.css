@@ -3,7 +3,7 @@
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 414px) {
   body {
     margin: auto;
     padding: 15px;
@@ -55,26 +55,30 @@
   }
 }
 
-@media screen and (min-width: 325px) and (max-width: 414px) {
-  body header {
-    width: 100%;
-    display: block;
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  body {
+    padding: 0;
   }
-  body header img {
-    margin-right: 0;
-    position: absolute;
+  .portfolio ul li a img {
+    width: 85%;
+    margin-left: 35px;
   }
-  body .section {
-    width: 100%;
+  .portfolio ul li .skills {
+    margin-left: 3px !important;
+    margin-top: -140px !important;
   }
-  body .contact ul {
+  .portfolio ul li .skills .fab {
+    font-size: 30px !important;
+  }
+  .contact {
     text-align: center;
   }
-  body .contact ul li {
-    padding: 10px 32px 0 0;
+  .contact ul li a {
+    padding: 6px;
   }
-  body .portfolio ul li {
-    margin-left: -8px;
+  .contact ul li a .fa,
+  .contact ul li a .fab {
+    font-size: 41px;
   }
 }
 
@@ -167,7 +171,7 @@ main p {
 
 .portfolio li .projectTitle {
   padding-left: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   top: -15px;
   position: relative;
   border-bottom: 1px solid #cb6225;

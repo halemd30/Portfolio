@@ -4,27 +4,72 @@
 
 @media screen and (max-width: 320px) {
   body {
-    width: 100%;
+    margin: auto;
+    padding: 15px;
+    width: 320px;
 
-    header {
-      width: 100vw;
-    }
-
-    .emptyFlex1,
-    .emptyFlex2,
-    .emptyFlex3 {
-      display: none;
-    }
     .section {
-      width: 100vw;
+      width: 100%;
+
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .portfolio ul {
+      padding-left: 0;
+
+      li {
+        margin-left: -10px;
+
+        img {
+          width: 75%;
+          margin-left: 48px;
+        }
+
+        .skills {
+          margin-left: 20px;
+          margin-top: -115px;
+
+          .fab {
+            font-size: 25px;
+          }
+        }
+
+        .projectTitle,
+        .descMobile {
+          text-align: center;
+          margin: auto;
+        }
+
+        .projectTitle {
+          padding-top: 20px;
+          padding-bottom: 0;
+          width: 240px;
+          margin-bottom: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .contact {
+      text-align: center;
+      //margin: auto;
+      ul {
+        padding-left: 0;
+        li {
+          padding: 10px;
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 325px) and (max-width: 414px) {
-  body,
-  html {
-    padding: 10px;
+  body {
+    //padding: 10px;
+    //max-width: 80%;
+    //overflow: hidden;
 
     header {
       width: 100%;
@@ -49,14 +94,17 @@
       }
     }
 
-    .portfolio ul li {
-      margin-left: -8px;
+    .portfolio ul {
+      //padding-left: 0;
+
+      li {
+        margin-left: -8px;
+      }
     }
   }
 }
 
-body,
-html {
+body {
   margin: auto;
   font-family: raleway;
 }
@@ -222,7 +270,6 @@ main {
   }
 
   .section {
-    //border: 1px solid red;
     padding-bottom: 0;
   }
 
@@ -253,12 +300,9 @@ main {
       display: block;
       top: -18px;
       right: 10px;
-      position: relative;
-      font-family: Alegreya;
-
-      a {
-        font-size: 21px;
-      }
+      padding-bottom: 0;
+      margin-left: 55px;
+      border-bottom: none;
     }
 
     .descMobile {

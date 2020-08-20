@@ -5,56 +5,80 @@
 
 @media screen and (max-width: 320px) {
   body {
-    width: 100%;
-  }
-  body header {
-    width: 100vw;
-  }
-  body .emptyFlex1,
-  body .emptyFlex2,
-  body .emptyFlex3 {
-    display: none;
+    margin: auto;
+    padding: 15px;
+    width: 320px;
   }
   body .section {
-    width: 100vw;
+    width: 100%;
+  }
+  body .section h2 {
+    text-align: center;
+  }
+  body .portfolio ul {
+    padding-left: 0;
+  }
+  body .portfolio ul li {
+    margin-left: -10px;
+  }
+  body .portfolio ul li img {
+    width: 75%;
+    margin-left: 48px;
+  }
+  body .portfolio ul li .skills {
+    margin-left: 20px;
+    margin-top: -115px;
+  }
+  body .portfolio ul li .skills .fab {
+    font-size: 25px;
+  }
+  body .portfolio ul li .projectTitle,
+  body .portfolio ul li .descMobile {
+    text-align: center;
+    margin: auto;
+  }
+  body .portfolio ul li .projectTitle {
+    padding-top: 20px;
+    padding-bottom: 0;
+    width: 240px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  body .contact {
+    text-align: center;
+  }
+  body .contact ul {
+    padding-left: 0;
+  }
+  body .contact ul li {
+    padding: 10px;
   }
 }
 
 @media screen and (min-width: 325px) and (max-width: 414px) {
-  body,
-  html {
-    padding: 10px;
-  }
-  body header,
-  html header {
+  body header {
     width: 100%;
     display: block;
   }
-  body header img,
-  html header img {
+  body header img {
     margin-right: 0;
     position: absolute;
   }
-  body .section,
-  html .section {
+  body .section {
     width: 100%;
   }
-  body .contact ul,
-  html .contact ul {
+  body .contact ul {
     text-align: center;
   }
-  body .contact ul li,
-  html .contact ul li {
+  body .contact ul li {
     padding: 10px 32px 0 0;
   }
-  body .portfolio ul li,
-  html .portfolio ul li {
+  body .portfolio ul li {
     margin-left: -8px;
   }
 }
 
-body,
-html {
+body {
   margin: auto;
   font-family: raleway;
 }
@@ -245,11 +269,9 @@ main p {
     display: block;
     top: -18px;
     right: 10px;
-    position: relative;
-    font-family: Alegreya;
-  }
-  .portfolio p.projectTitle a {
-    font-size: 21px;
+    padding-bottom: 0;
+    margin-left: 55px;
+    border-bottom: none;
   }
   .portfolio .descMobile {
     display: none;

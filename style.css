@@ -169,6 +169,10 @@ main p {
   padding-left: 2px;
 }
 
+.portfolio li .skills .fa-react {
+  margin-left: -3px;
+}
+
 .portfolio li .projectTitle {
   padding-left: 15px;
   padding-bottom: 5px;
@@ -263,11 +267,15 @@ main p {
     display: flex;
   }
   .portfolio li .skills {
-    margin-left: 22px !important;
+    margin-left: 20px !important;
   }
   .portfolio li .skills .fa-html5,
   .portfolio li .skills .fa-css3-alt {
     padding-right: 2px;
+  }
+  .portfolio li .skills .fa-react,
+  .portfolio li .skills .fa-node-js {
+    margin-left: -5px;
   }
   .portfolio li p.projectTitle {
     display: block;
@@ -278,8 +286,8 @@ main p {
     border-bottom: none;
   }
   .portfolio li .portRight {
-    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(30%, rgba(203, 97, 37, 0.4)), to(rgba(36, 110, 128, 0.4)));
-    background-image: linear-gradient(to bottom right, rgba(203, 97, 37, 0.4) 30%, rgba(36, 110, 128, 0.4));
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(30%, rgba(203, 97, 37, 0.3)), to(rgba(36, 110, 128, 0.3)));
+    background-image: linear-gradient(to bottom right, rgba(203, 97, 37, 0.3) 30%, rgba(36, 110, 128, 0.3));
     border-radius: 10px;
     width: 382px;
     height: 151px;

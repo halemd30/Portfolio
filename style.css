@@ -21,28 +21,50 @@
   body .portfolio ul li {
     margin-left: -10px;
   }
-  body .portfolio ul li img {
+  body .portfolio ul li .portLeft img {
     width: 75%;
     margin-left: 48px;
   }
-  body .portfolio ul li .skills {
+  body .portfolio ul li .portLeft .skills {
     margin-left: 20px;
     margin-top: -115px;
   }
-  body .portfolio ul li .skills .fab {
+  body .portfolio ul li .portLeft .skills .fab {
     font-size: 25px;
   }
-  body .portfolio ul li .projectTitle,
+  body .portfolio ul li .portLeft .projectTitle,
+  body .portfolio ul li .portLeft .description {
+    text-align: center !important;
+    margin: auto;
+  }
+  body .portfolio ul li .portLeft .projectTitle {
+    padding: 10px 0 0 0 !important;
+    width: 240px !important;
+    margin-bottom: 0px !important;
+    border-bottom: none;
+  }
+  body .portfolio ul li .portLeft .projectTitle .mobileUnderline {
+    display: block;
+    border-bottom: 1px solid #cb6225;
+    width: 100%;
+  }
+  body .portfolio ul li .portLeft .projectTitle .projectGithub {
+    float: none;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    font-family: Alegreya;
+  }
+  body .portfolio ul li .portLeft .projectTitle .projectGithub .fab {
+    color: #cb6225;
+    font-size: 20px;
+    padding-right: 4px;
+  }
+  body .portfolio ul li .portLeft .projectTitle .projectGithub a {
+    font-size: 17px;
+  }
   body .portfolio ul li .description {
     text-align: center;
     margin: auto;
-  }
-  body .portfolio ul li .projectTitle {
-    padding-top: 20px;
-    padding-bottom: 0;
-    width: 240px;
-    margin-bottom: 10px;
-    padding-right: 10px;
   }
   body .contact {
     text-align: center;
@@ -64,8 +86,8 @@
     margin-left: 35px;
   }
   .portfolio ul li .skills {
-    margin-left: 3px !important;
-    margin-top: -140px !important;
+    margin-left: 17px !important;
+    margin-top: -127px !important;
   }
   .portfolio ul li .skills .fab {
     font-size: 30px !important;
@@ -174,25 +196,54 @@ main p {
 }
 
 .portfolio li .projectTitle {
-  padding-left: 15px;
-  padding-bottom: 5px;
-  top: -15px;
-  position: relative;
-  border-bottom: 1px solid #cb6225;
+  padding: 10px 5px 5px 5px;
   width: 300px;
+  margin-bottom: 20px;
   font-family: Alegreya;
+  border-bottom: 1px solid #cb6225;
 }
 
-.portfolio li .projectTitle a {
-  font-size: 21px;
+.portfolio li .projectTitle .mobileUnderline {
+  display: none;
+}
+
+.portfolio li .projectTitle .projectGithub {
+  float: right;
+}
+
+.portfolio li .projectTitle .projectGithub .fab {
+  color: #cb6225;
+  font-size: 20px;
+}
+
+.portfolio li .projectTitle .projectGithub a {
+  font-size: 17px;
+}
+
+.portfolio li .projectTitle .projectGithub a .title {
+  z-index: 10;
+}
+
+.portfolio li .projectTitle .projectGithub a:nth-child(2) {
+  border-right: 1px solid #cb6225;
+  padding: 0 5px 0 0;
+}
+
+.portfolio li .projectTitle .projectGithub .server {
+  padding-left: 3px;
+}
+
+.portfolio li .projectTitle .projectGithub .oneRepo {
+  border: none !important;
 }
 
 .portfolio li .description {
   width: 300px;
   position: relative;
-  padding: 75px 15px 0 15px;
+  padding: 80px 15px 0 15px;
   top: -90px;
   height: 120px;
+  z-index: -1;
 }
 
 .portfolio li img {
@@ -265,29 +316,34 @@ main p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 20px;
   }
-  .portfolio li .skills {
+  .portfolio li .portLeft img {
+    margin-left: 56px;
+  }
+  .portfolio li .portLeft .skills {
     margin-left: 20px !important;
   }
-  .portfolio li .skills .fa-html5,
-  .portfolio li .skills .fa-css3-alt {
+  .portfolio li .portLeft .skills .fa-html5,
+  .portfolio li .portLeft .skills .fa-css3-alt {
     padding-right: 2px;
   }
-  .portfolio li .skills .fa-react,
-  .portfolio li .skills .fa-node-js {
+  .portfolio li .portLeft .skills .fa-react,
+  .portfolio li .portLeft .skills .fa-node-js {
     margin-left: -5px;
   }
-  .portfolio li p.projectTitle {
-    display: block;
-    top: -18px;
-    right: 10px;
+  .portfolio li .portLeft .projectTitle {
     padding-bottom: 0;
     margin-left: 55px;
     border-bottom: none;
+    padding-top: 3px;
+  }
+  .portfolio li .portLeft .projectTitle .projectGithub {
+    float: left;
   }
   .portfolio li .portRight {
-    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(30%, rgba(203, 97, 37, 0.3)), to(rgba(36, 110, 128, 0.3)));
-    background-image: linear-gradient(to bottom right, rgba(203, 97, 37, 0.3) 30%, rgba(36, 110, 128, 0.3));
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(30%, rgba(203, 97, 37, 0.2)), to(rgba(36, 110, 128, 0.2)));
+    background-image: linear-gradient(to bottom right, rgba(203, 97, 37, 0.2) 30%, rgba(36, 110, 128, 0.2));
     border-radius: 10px;
     width: 382px;
     height: 151px;
@@ -299,6 +355,7 @@ main p {
     text-align: left;
     padding-left: 80px;
     width: 380px;
+    padding-top: 75px;
   }
   .portfolio li .portRight .calvinQuizDesc {
     margin-top: 53px;

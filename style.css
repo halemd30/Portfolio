@@ -62,6 +62,9 @@
   body .portfolio ul li .portLeft .projectTitle .projectGithub a {
     font-size: 17px;
   }
+  body .portfolio ul li .portRight > .growingUpDesc {
+    margin-bottom: 55px;
+  }
   body .portfolio ul li .description {
     text-align: center;
     margin: auto;
@@ -276,10 +279,16 @@ main p {
   opacity: 70%;
 }
 
+@media screen and (min-width: 500px) and (max-width: 860px) {
+  .portRight > .growingUpDesc {
+    margin-bottom: 58px;
+  }
+}
+
 @media screen and (min-width: 860px) {
   .divider {
     width: 1px;
-    height: 170vh;
+    height: 210vh;
     margin: auto;
     position: absolute;
     left: 50%;
@@ -356,6 +365,9 @@ main p {
     padding-left: 80px;
     width: 380px;
     padding-top: 75px;
+  }
+  .portfolio li .portRight .growingUpDesc {
+    margin-top: 24px;
   }
   .portfolio li .portRight .calvinQuizDesc {
     margin-top: 53px;

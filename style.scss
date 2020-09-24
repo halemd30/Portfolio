@@ -82,6 +82,10 @@ $purple2: #c993a0;
           }
         }
 
+        .portRight > .growingUpDesc {
+          margin-bottom: 55px;
+        }
+
         .description {
           text-align: center;
           margin: auto;
@@ -314,10 +318,16 @@ main {
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 860px) {
+  .portRight > .growingUpDesc {
+    margin-bottom: 58px;
+  }
+}
+
 @media screen and (min-width: 860px) {
   .divider {
     width: 1px;
-    height: 170vh;
+    height: 210vh;
     margin: auto;
     position: absolute;
     left: 50%;
@@ -399,6 +409,10 @@ main {
           padding-left: 80px;
           width: 380px;
           padding-top: 75px;
+        }
+
+        .growingUpDesc {
+          margin-top: 24px;
         }
 
         .calvinQuizDesc {
